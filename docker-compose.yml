@@ -1,0 +1,9 @@
+version: '3'
+services:
+  elephpant-web:
+    build: ./elephpant
+    image: elephpant-web
+    container_name: elephpant-web
+    env_file: elephpant/.env
+    ports:
+        - "8080:80"
